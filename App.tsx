@@ -1,20 +1,13 @@
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
+import {Text} from 'react-native';
+import tailwind from 'tailwind-rn';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+function TestTailwind() {
+  return <Text style={tailwind('bg-green-500')}>Configure Tailwind CSS</Text>;
+}
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-    </SafeAreaView>
-  );
+  return <TestTailwind />;
 };
 
 export default App;
