@@ -1,13 +1,8 @@
 import React from 'react';
-import {Text} from 'react-native';
-import tailwind from 'tailwind-rn';
-
-function TestTailwind() {
-  return <Text style={tailwind('bg-green-500')}>Configure Tailwind CSS</Text>;
-}
+import Home from './src/Home';
 
 const App = () => {
-  return <TestTailwind />;
+  return <Home />;
 };
 
 export default App;
