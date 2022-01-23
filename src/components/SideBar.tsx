@@ -4,7 +4,7 @@ import tailwind from 'tailwind-rn';
 
 export default function SideBar() {
   return (
-    <View style={tailwind('bg-gray-200 w-1/4')}>
+    <View style={tailwind('flex-col bg-gray-200 w-1/4 justify-between')}>
       <Image source={require('../images/logo.png')} />
       <View style={tailwind('flex-row mt-4')}>
         <TouchableOpacity>
