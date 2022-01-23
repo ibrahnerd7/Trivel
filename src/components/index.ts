@@ -6,6 +6,8 @@ import PresetSequences from './PresetSequences';
 import CustomSequences from './CustomSequences';
 import Instructions from './Instructions';
 import SequencesFooter from './SequencesFooter';
+import StatsSection from './StatsSection';
+import SequenceButton from './SequenceButton';
 
 export {
   SideBar,
@@ -16,4 +18,6 @@ export {
   CustomSequences,
   Instructions,
   SequencesFooter,
+  StatsSection,
+  SequenceButton,
 };
