@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, View} from 'react-native';
+import {FlatList, View} from 'react-native';
 import tailwind from 'tailwind-rn';
 import {
   CustomSequences,
@@ -14,8 +14,10 @@ import {
 export default function Control() {
   return (
     <View style={tailwind('flex-row')}>
-      <ScrollView>
-        <ScrollView horizontal contentContainerStyle={tailwind('flex-col')}>
+      <FlatList
+        data={[]}
+        renderItem={({}) => <></>}
+        ListHeaderComponent={
           <View style={tailwind('flex-row')}>
             <Assistance />
             <Resistance />
@@ -23,12 +25,14 @@ export default function Control() {
             <PresetSequences />
             <CustomSequences />
           </View>
+        }
+        ListFooterComponent={
           <View style={tailwind('flex-row')}>
             <Instructions />
             <SequencesFooter />
           </View>
-        </ScrollView>
-      </ScrollView>
+        }
+      />
     </View>
   );
 }

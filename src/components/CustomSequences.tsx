@@ -14,13 +14,19 @@ export default function CustomSequences() {
   ];
 
   return (
-    <View style={tailwind('px-2 mt-4')}>
+    <View style={[tailwind('mt-4'), {marginLeft: -200}]}>
       <React.Fragment>
         <FlatList
           data={titles}
-          ListHeaderComponent={<SectionHeader title="Custom sequences" />}
+          ListHeaderComponent={
+            <View style={tailwind('w-3/4')}>
+              <SectionHeader title="Custom sequences" />
+            </View>
+          }
           renderItem={({item}) => (
-            <SequenceButton title={item} variant="custom" />
+            <View style={tailwind('w-3/4')}>
+              <SequenceButton title={item} variant="custom" />
+            </View>
           )}
         />
       </React.Fragment>

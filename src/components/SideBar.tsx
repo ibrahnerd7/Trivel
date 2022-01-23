@@ -18,25 +18,25 @@ export default function SideBar(props: I_SideBarProps) {
   const {destinations, selectedIndex, setSelectedIndex} = props;
 
   return (
-    <View style={tailwind('flex-col bg-gray-200 w-1/4 h-full justify-around')}>
+    <View style={tailwind('flex-col bg-gray-200 w-1/6 h-full justify-around pb-4')}>
       <Image source={require('../images/logo.png')} />
       <View style={tailwind('flex-row justify-between')}>
         <TouchableOpacity>
           <Image
             source={require('../images/pause-button.png')}
-            style={tailwind('w-24 h-24 mx-2')}
+            style={tailwind('w-24 h-24')}
           />
         </TouchableOpacity>
         <TouchableOpacity>
           <Image
             source={require('../images/play-button.png')}
-            style={tailwind('w-24 h-24 mx-2')}
+            style={tailwind('w-24 h-24')}
           />
         </TouchableOpacity>
         <TouchableOpacity>
           <Image
             source={require('../images/stop-button.png')}
-            style={tailwind('w-24 h-24 mx-2')}
+            style={tailwind('w-24 h-24')}
           />
         </TouchableOpacity>
       </View>

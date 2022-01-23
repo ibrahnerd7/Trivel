@@ -15,14 +15,14 @@ export default function Instructions() {
   return (
     <FlatList
       data={instructions}
-      style={tailwind('px-2 my-3')}
+      style={tailwind('px-2 py-4')}
       ListHeaderComponent={
-        <Text style={tailwind('py-6 font-bold text-xl w-1/2 text-center')}>
+        <Text style={[tailwind('py-2 font-bold text-xl w-1/2 text-center'),{marginTop:-32}]}>
           Instructions
         </Text>
       }
       renderItem={({item}) => (
-        <Text style={tailwind('text-lg py-1 font-semibold')}>{item}</Text>
+        <Text style={tailwind('text-lg font-semibold pb-1')}>{item}</Text>
       )}
     />
   );

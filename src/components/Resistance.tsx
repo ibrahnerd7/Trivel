@@ -101,7 +101,7 @@ function ModeBody() {
 
 export default function Resistance() {
   return (
-    <View style={tailwind('px-2 pt-4  mr-16')}>
+    <View style={tailwind('px-2 mr-4')}>
       <SectionHeader
         title="Resistance"
         hasIcon

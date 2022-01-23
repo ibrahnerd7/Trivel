@@ -14,13 +14,19 @@ export default function PresetSequences() {
   ];
 
   return (
-    <View style={tailwind('px-2 mt-4')}>
+    <View style={tailwind('px-2 mt-4 ')}>
       <React.Fragment>
         <FlatList
           data={titles}
-          ListHeaderComponent={<SectionHeader title="Preset sequences" />}
+          ListHeaderComponent={
+            <View style={tailwind('w-1/2')}>
+              <SectionHeader title="Preset sequences" />
+            </View>
+          }
           renderItem={({item}) => (
-            <SequenceButton title={item} variant="preset" />
+            <View style={tailwind('w-1/2')}>
+              <SequenceButton title={item} variant="preset" />
+            </View>
           )}
         />
       </React.Fragment>

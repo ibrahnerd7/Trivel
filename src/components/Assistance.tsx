@@ -76,19 +76,19 @@ export default function Assistance() {
   ];
 
   return (
-    <View style={tailwind('mt-4 mr-16 ml-4')}>
+    <View style={tailwind('mr-4 ml-4')}>
       <SectionHeader
         title="Assistance"
         hasIcon
         iconSource={require('../images/power-green-button.png')}
       />
       <FlatList
+        style={tailwind(
+          'border-4 bg-blue-50 border-blue-400  rounded-3xl mt-3 py-3 px-2',
+        )}
         data={data}
         renderItem={({item}) => (
           <ModeItem title={item.title} options={item.options} />
-        )}
-        contentContainerStyle={tailwind(
-          'border-4 bg-blue-50 border-blue-400  rounded-3xl mt-3 py-3 px-2',
         )}
       />
     </View>

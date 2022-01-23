@@ -120,7 +120,7 @@ function StartStopBody() {
 
 export default function StartStop() {
   return (
-    <View style={tailwind('px-2 mt-4 mt-4 mr-16')}>
+    <View style={tailwind('px-2 mt-4 mr-4')}>
       <SectionHeader title="Start/Stop" />
       <StartStopBody />
     </View>

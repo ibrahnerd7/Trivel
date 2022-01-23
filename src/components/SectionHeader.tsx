@@ -18,7 +18,7 @@ export default function SectionHeader(props: I_SectionHeaderProps) {
   const {title, hasIcon = false, iconSource} = props;
 
   return (
-    <View style={tailwind('flex-row justify-center pt-4')}>
+    <View style={tailwind('flex-row pt-2')}>
       <TouchableOpacity style={tailwind('flex-row')}>
         {/* @ts-ignore */}
         {hasIcon && <Image source={iconSource} style={tailwind('w-12 h-12')} />}
