@@ -17,7 +17,11 @@ export default function Instructions() {
       data={instructions}
       style={tailwind('px-2 py-4')}
       ListHeaderComponent={
-        <Text style={[tailwind('py-2 font-bold text-xl w-1/2 text-center'),{marginTop:-32}]}>
+        <Text
+          style={[
+            tailwind('py-2 font-bold text-xl w-1/2 text-center'),
+            {marginTop: -32},
+          ]}>
           Instructions
         </Text>
       }
